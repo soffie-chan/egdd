@@ -4,17 +4,18 @@
 
 A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his dying breath, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing nodes as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
 
+
 ## Influences (Brief)
 
 - [*Shadow Fighter*](https://www.youtube.com/watch?v=CTHdMReN_9I&list=PLGtZwVE-T07sgNHY4O-rWxXGvv_iazHaA):
-  - Medium: *Video game with Player vs PC action fighting (Mobile)*
-  - Explanation: *The combat animation, environment design, and character profile designs.*
+  - *Video game with Player vs PC action fighting (Mobile)*
+  - *The combat animations, environment design, and character profile designs.*
 - [*Ronin: Turn-Based Action Platformer*](https://www.youtube.com/watch?v=zLmbeogBfqU):
-  - Medium: *Video game with Player vs PC turn-based fighting*
-  - Explanation: *Turn-based combat is the essence of this game!*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+  - *Video game with Player vs PC turn-based fighting*
+  - *Turn-based combat and action, level design with platforms, and overall "feel" of the game.*
+- *Naruto*:
+  - *TV Series (Anime) based on a young, rising ninja facing troubles.*
+  - *Character design, special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.*
 
 ## Core Gameplay Mechanics (Brief)
 
