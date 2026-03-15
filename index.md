@@ -109,10 +109,10 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Jump to platforms by solving platform-connection problems (related to linked lists) - traverse a linked list and be able to choose which platform is next based on which nodes are connected to the current one.*
-- *Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Fight boss battles to test your knowledge against the clock. Use your knowledge of linked lists and their connections (links) to one another. Answer questions in a limited amount of time, and compete against bosses.*
-- *Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additions, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.*
-- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via WASD keys to go up, left, down, and right, respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.*
+- Jump to platforms by solving platform-connection problems (related to linked lists). Traverse a linked list path and be able to choose which platform is next based on which nodes (platforms) are connected to the current node.
+- Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Advancing to more difficult enemies leads you to a boss fight, which is similar in combat, but timed - you lose your turn if the timer runs out on your move. Use your knowledge of linked lists and their connections (links) to link platforms to avoid attacks. Answer questions in a limited amount of time, and finish the boss level to advance to the next topic.
+- Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additionally, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.
+- Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via WASD keys to go up, left, down, and right, respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.
 
     
 ## Feedback
@@ -146,40 +146,43 @@ The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once give
 
 # Assets Needed
 
-## Aethestics
+## Aesthetics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+The Last Shinobi has an ancient Japanese-themed backstory, so its aesthetic will follow the same. The environment is calm and natural, but tense as you fight the enemies, especially the final boss of each stage. Paired with ambient music, the platforming aspects of the game will be more calm, encouraging players to focus on learning than just playing. 
+
 
 ## Graphical
 
 - Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
+  - *The Last Shinobi (Takeshi, but name does not appear outside of cutscenes)* - Main and only playable character that executes enemies, moves throughout the level, and leads the story. They are a shadow-like figure sporting a kasa (Japanese straw hat) and commonly seen clothing during the time in an attempt to blend in.
+  - *Grunts (Unnamed)* - Main opponents, designed differently in art style based on the stage.
+  - *Bosses* - Each boss is named after a Bushido virtue (way of the samurai). They will be shadow-like figures in traditional samurai headwear and clothing.
+  - *Akio* - The Last Shinobi's brother, only appears in end cutscene. Frail and pale from his sickness, but happy to see his brother.
+
 - Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+  - *Characters* - Characters will mostly be detailed but dark silhouettes.
+  - *Cutscenes* - Anime cartoon-like art style/sketchbook-like graphics.
+  - *Environment* - Slightly realistic and blurry as you go further, but strong and detailed the more close the plane is to the character. 
+  - SEE **STORYBOARDING** FOR VISUAL DETAILS!
+
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+  - Each stage has its own background as you approach your destination - from the outskirts of your training grounds, a forest, village outskirts, village, and the final residence of the main boss.
+  - The platforms are designed based on their stage - for example, a mud-and-grass platform in the forest versus a stone platform in the training grounds.
+  - Some fire effects and particle effects will be added to items like torches and a few fire-based attacks.
 
 
 ## Audio
 
-
-*Game region/phase/time are ways of designating a particularly important place in the game.*
-
 - Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
+  - *Main Screen/Death Screen*: [Bamboo Flute Music](https://youtu.be/kIQS15N5qYQ?si=xXjXFNbwLzA-9-rW)
+  - *Boss Fights*: [Battle Music](https://youtu.be/E9kfzk0ei88?si=8dvjtMh9ynD3Q598)
+  - *Mid-Level*: [Ambient Japanese Instrumental](https://www.youtube.com/watch?v=RWKnJn-gVxw&list=RDRWKnJn-gVxw&start_radio=1)
   
-*Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
-
 - Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
+  - *Attacks*: [Sword Slashes](https://www.youtube.com/watch?v=4bJI-e28kFg)
+  - *New Stage*: [Sound Effect Music](https://www.youtube.com/watch?v=YOTDFFImDb0)
+  - *Main Menu/Options Select* (Clicking Play/Options/Quit/Menu): [Slash](https://www.youtube.com/watch?v=aqXcGxcfUXQ)
+  - *Jumping/Landing*: Short grunts and gasps (as heard in games like Temple Run). We intend to record these by ourselves!
 
 
 # Metadata
