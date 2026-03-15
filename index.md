@@ -53,7 +53,7 @@ C++ and Linked Lists
 *What do they need to know prior to trying this game?*
 
 - Prior to the game, the player will need to have a basic understanding of C++.
-- Prior to the game, the player will need to understand Linked Lists.m
+- Prior to the game, the player will need to understand Linked Lists.
 
 ## Assessment Measures
 
