@@ -124,19 +124,24 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Presentation of Rules
 
-*Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+- As a practitioner of Hebijutsu, The Last Shinobi is connected to his environment, specifically the nature of snakes. A snake spirit will provide helpful dialogue to assist the shinobi in his trials, especially in the beginning, that will disappear with time. This spirit is later revealed to be the Shinobi's brother's fighting spirit.
+- When injured enough times to die, the player will be faced with a black death screen and the white silhouette of the last shinobi in his death animation. Depending on how the player failed (lost connection to a platform, died to a platform that should have been deleted, etc.), they will receive a helpful note surrounding the topic of the stage.
+[PICTURE HERE]
 
 ## Presentation of Content
 
-*Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+- Players will receive a short tutorial from a snake spirit (see **Presentation of Rules**).
+- Since the concept at hand is linked lists, each node is a platform, whose data can be plain, with an enemy, with spikes, or with power-ups. This will be a visual detail that the player is expected to grasp. Each platform will have a small Japanese character representing an address, which will be used to complicate the game later on. This will teach players on how linked lists are formatted.
+- The player will have buttons on-screen to move to the next platform ('.next'), to go back to a platform ('.prev'), and to commence an attack. If the player goes to the platform in the right sequence, they will be able to do a critical surprise attack, killing the enemy in few hits. However, if done incorrectly (for example, if they delete a platform they are standing on and end up falling onto the platform below them that contains an enemy), they will be punished by being attacked and recieving damage. Enough damage will kill the player and force them to start from the beginning of the level. This teaches core elements of linked lists, such as traversal, deletion, and insertion.
+- Boss levels will have the same features, but the player is timed. The level will be set in a specific way that pose some concepts as puzzles (for example, the player will be expected to created a doubly linked list to travel backwards to dodge an incoming attack). Note that the player is not allowed to stay on the same platform at any point in the game.
 
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once given up to his training as a young boy, lost contact with his family, including the brother he once looked up to - a trained swordsman who returned from war with a strange illness. With all his hopes gone up in the flames along with his village, the shinobi recieves a secret letter from his brother, who now hides in a nearby village captured by their clan's greatest enemies. The news is devastating - his brother lies on his deathbed, with the last hope of seeing his brother once more before he rests. Determined, the shinobi prepares his sharpest sword for the greatest battle of his life - not just him against the strongest clan in ancient East Japon, but the force that kept him from his soulmate for far too long.
 
 ## Storyboarding
 
-*Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
+[PICTURES HERE]
 
 # Assets Needed
 
