@@ -1,29 +1,29 @@
-# REPLACE THIS WITH YOUR GAME NAME
+# The Last Shinobi
 
 ## Elevator Pitch
 
-Replace this with a one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator, and you only had 60 seconds. You should not write more than a few sentences at most. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.
+A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his dying breath, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing nodes as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
 
 ## Influences (Brief)
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- [*Shadow Fighter*](https://www.youtube.com/watch?v=CTHdMReN_9I&list=PLGtZwVE-T07sgNHY4O-rWxXGvv_iazHaA):
+  - Medium: *Video game with Player vs PC action fighting (Mobile)*
+  - Explanation: *The combat animation, environment design, and character profile designs.*
+- [*Ronin: Turn-Based Action Platformer*](https://www.youtube.com/watch?v=zLmbeogBfqU):
+  - Medium: *Video game with Player vs PC turn-based fighting*
+  - Explanation: *Turn-based combat is the essence of this game!*
 - *Influence #3*:
   - Medium: *(Television, Games, Literature, Movies, etc.)*
   - Explanation: *In one paragraph or less, explain why this is an influence.*
 
 ## Core Gameplay Mechanics (Brief)
 
-*Give a very high-level description of any core gameplay mechanics*
-
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- *Jump to platforms by solving platform-connection problems (related to linked lists)*
+- *Stealthily execute unaware opponents with action combos*
+- *Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death (replaying the level)*
+- *Correctly connect platforms to ensure that the shinobi can jump to them AND reach his end goal.*
+- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance.*
+- *Fight boss battles to test your knowledge against the clock*
 
 # Learning Aspects
 
