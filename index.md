@@ -44,9 +44,9 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- *By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for insertion and deletion.*
+- *By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for traversal.*
+- *By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.*
 
 ## Prerequisite Knowledge
 
@@ -109,9 +109,10 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
+- *Jump to platforms by solving platform-connection problems (related to linked lists) - traverse a linked list and be able to choose which platform is next based on which nodes are connected to the current one.*
+- *Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Fight boss battles to test your knowledge against the clock. Use your knowledge of linked lists and their connections (links) to one another. Answer questions in a limited amount of time, and compete against bosses.*
+- *Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additions, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.*
+- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via WASD keys to go up, left, down, and right, respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.*
 
     
 ## Feedback
