@@ -2,7 +2,7 @@
 
 ## Elevator Pitch
 
-A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his dying breath, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing nodes as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
+A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his deathbed, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing nodes as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
 
 
 ## Influences (Brief)
