@@ -9,22 +9,22 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 - [*Shadow Fighter*](https://www.youtube.com/watch?v=CTHdMReN_9I&list=PLGtZwVE-T07sgNHY4O-rWxXGvv_iazHaA):
   - *Video game with Player vs PC action fighting (Mobile)*
-  - *The combat animations, environment design, and character profile designs.*
+  - The combat animations, environment design, and character profile designs.
 - [*Ronin: Turn-Based Action Platformer*](https://www.youtube.com/watch?v=zLmbeogBfqU):
   - *Video game with Player vs PC turn-based fighting*
-  - *Turn-based combat and action, level design with platforms, and overall "feel" of the game.*
+  - Turn-based combat and action, level design with platforms, and overall "feel" of the game.
 - *Naruto*:
   - *TV Series (Anime) based on a young, rising ninja facing troubles.*
-  - *Character design, special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.*
+  - Character design, special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.
 
 ## Core Gameplay Mechanics (Brief)
 
-- *Jump to platforms by solving platform-connection problems (related to linked lists)*
-- *Stealthily execute unaware opponents with action combos*
-- *Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death (replaying the level)*
-- *Correctly connect platforms to ensure that the shinobi can jump to them AND reach his end goal.*
-- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance.*
-- *Fight boss battles to test your knowledge against the clock*
+- Jump to platforms by solving platform-connection problems (related to linked lists)
+- Stealthily execute unaware opponents with action combos
+- Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death (replaying the level)
+- Correctly connect platforms to ensure that the shinobi can jump to them AND reach his end goal.
+- Traverse the platforms using buttons and delete dangerous spiky platforms to advance.
+- Fight boss battles to test your knowledge against the clock
 
 # Learning Aspects
 
@@ -96,30 +96,71 @@ A ninja in training receives a mysterious letter from a captured village, from h
 - *etc.*
 
 # Procedures/Actions
-
-*Describe the control scheme and what actions a user can take in the game.*
+- The player can click the "Next" button to move to the platform that is linked to the current platform's "next" field.
+- The player can click the "Previous" button to move to the platform that is linked to the current platform's "previous" field.
+- The player can click "Attack" to use their turn to fight an enemy. Combat is a Quick Time Event that will do damage to the opponent based on how well it was executed.
 
 # Rules
 
-*What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
+- The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself.
+- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character on the next platform to connect the two. There will be multiple platforms, so connecting them will advance in difficulty.
+- The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
+- Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around more, but make even more mistakes.
+- The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision.
+- The player only gets the assistance of a "snake spirit" on the first stage, which is an introduction to the game. After that, they only get hints to a better performance on the death screen.
+- The player will be given a QTE (Quick Time Event) to attack an opponent. Its difficulty will vary based on how "clean" their platform connection is. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform.
+- Players will learn through these steps to traverse a linked list. Furthermore, difficulty will be enhanced with an increasing number of nodes (platforms), and concepts including:
+  - node deletion (removing a harmful platform)
+  - doubly linked lists (in the first stage, the player can only move in one direction), 
+  - circular linked lists (in a boss fight)
+  - swap nodes (swap platforms to jump to)
+  - and a few other medium-difficulty concepts.
+
 
 # Objects/Entities
 
-*What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
+- Enemies and their movesets.
+- Main Character and their movesets - including their special move, that can eliminate enemies at a range (does not appear until later), a healthbar.
+- Bosses and their movesets.
+- On-screen buttons for next, previous, and attack.
+- On-screen timer for QTE and Boss Fights.
+- Platforms.
+- Snake Spirit guide and text boxes.
+- Announcements. (You win, You lose, Stage Complete, etc.)
+- Buttons (Main screen, settings, quit, etc.)
 
 ## Core Gameplay Mechanics (Detailed)
 
 - Jump to platforms by solving platform-connection problems (related to linked lists). Traverse a linked list path and be able to choose which platform is next based on which nodes (platforms) are connected to the current node.
 - Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Advancing to more difficult enemies leads you to a boss fight, which is similar in combat, but timed - you lose your turn if the timer runs out on your move. Use your knowledge of linked lists and their connections (links) to link platforms to avoid attacks. Answer questions in a limited amount of time, and finish the boss level to advance to the next topic.
 - Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additionally, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.
-- Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via WASD keys to go up, left, down, and right, respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.
+- Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via Previous and Next nodes respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.
 
     
 ## Feedback
+**Short Term Feedback**
+**VISUAL**
+- The player is rewarded with an "Enemy Slain" popup when they kill a regular enemy. They will have an enemy counter to help them see how many they killed. Lastly, once all enemies are killed, they will have a "All enemies slain. Move forward." text popup.
+- In the start of the game, the tutorial will be led by a snake spirit that will be very encouraging, saying things like "Good work, you made it to the next platform!" and rewarding the player for their moves. Around the fourth stage, when he fades away, he will reassure the player that they know the most important things to progress forward.
+- The stages will be white screens with the stage name and title written on it, so the player is fully aware of their progress.
+- On making too many mistakes, the player will die, recieving a black screen that gives them some words of advice based on the reason why they died.
 
-*Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
+**AUDIO**
+- The main character will make a grunting sound when they get hurt, signaling that the player made a mistake, paired with a decreasing healthbar.
+- A victorious sound will play on level completion.
+- A single slash sound will play, paired with a black screen and a cry from the main character, signaling their death.
 
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+**ANIMATION**
+- On landing on the last platform, the main character will look back at the level, nod, and walk forth to the next level.
+- There will be one "empty area" that the player can run through - signaling a boss battle is incoming and that they are at the final stretch of the gameplay objective of that stage.
+
+**Long Term Feedback**
+- A level and stage counter will inform the player of their progression through the game.
+- The players deaths (NOT injuries) will be counted to remind them only of continuous mistakes.
+- When you win a stage, you get a cutscene into the next stage. When you win the game, you get a more detailed cutscene where the Last Shinobi meets his brother.
+- If you make an incorrect connection, you will start at the beginning of the level. The player will recieve a blurb that appears on the top of the screen as to how the character got hurt.
+- On completing levels, the player will recieve a congratulatory message.
+
 
 # Story and Gameplay
 
