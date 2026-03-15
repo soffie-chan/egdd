@@ -65,11 +65,9 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
-- *Reason #4*
-- *etc.*
+- *This game is set apart from other games because it aims to teach the objective of having one part of a list connect to the other, helping the player to progress through the platforms while learning how to read and understand a linked list.*
+- *This game is also different from other games because it adds the ability to visualize if an incorrect platform is selected, it shows the user losing that reference point or obtaining a broken list, causing them to have to restart.*
+- *This game is also different because it combines a platformer with stealth combat, and answering different questions against a final boss, all required for the player to proceed and complete the game.*
 
 # Player Interaction Patterns and Modes
 
