@@ -30,15 +30,15 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+C++ and Linked Lists
 
 ## Target Audiences
 
-*Who are your learners?*
+*Novice programmers with prior knowledge up to limited C++ proficiency.
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+*This would be assigned as supplementary practice for college-level C++ or Data Structures and algorithms.
 
 ## Learning Objectives
 
@@ -52,14 +52,17 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- Prior to the game, the player will need to have a basic understanding of C++.
+- Prior to the game, the player will need to understand Linked Lists.m
 
 ## Assessment Measures
 
-*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
+The player is expected to be able to:
 
-
+- Traverse a linked list by proceeding through the game via each platform in the correct and connected order.
+- Add all necessary platforms, while missing one will result in a loss of references and potentially a broken list.
+- Stealthily attack opponents using hit attacks and range attacks on opponents and also bosses.
+- Connecting all platforms in a limited amount of time to complete levels promptly.
 
 # What sets this project apart?
 
@@ -110,7 +113,7 @@ A ninja in training receives a mysterious letter from a captured village, from h
 - *Jump to platforms by solving platform-connection problems (related to linked lists) - traverse a linked list and be able to choose which platform is next based on which nodes are connected to the current one.*
 - *Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Fight boss battles to test your knowledge against the clock. Use your knowledge of linked lists and their connections (links) to one another. Answer questions in a limited amount of time, and compete against bosses.*
 - *Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additions, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.*
-- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via WASD keys to go up, left, down, and right, respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.*
+- *Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via the mouse to go up, left, down, and right. The player also must delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.*
 
     
 ## Feedback
