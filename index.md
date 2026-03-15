@@ -42,11 +42,9 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Learning Objectives
 
-*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
-
-- *By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for insertion and deletion.*
-- *By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for traversal.*
-- *By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.*
+- By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for insertion, deletion, and traversal.
+- By the end of the lesson, players will be able to perform necessary actions to remove, add, and travel through doubly linked lists, circular linked lists, and convert linked lists into doubly linked/circular linked lists.
+- By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.
 
 ## Prerequisite Knowledge
 
@@ -107,6 +105,7 @@ A ninja in training receives a mysterious letter from a captured village, from h
 - The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
 - Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around more, but make even more mistakes.
 - The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision.
+- If a platform is not assigned a .prev or a .next by accident, it will disappear. The player will have to find another route or restart the level.
 - The player only gets the assistance of a "snake spirit" on the first stage, which is an introduction to the game. After that, they only get hints to a better performance on the death screen.
 - The player will be given a QTE (Quick Time Event) to attack an opponent. Its difficulty will vary based on how "clean" their platform connection is. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform.
 - Players will learn through these steps to traverse a linked list. Furthermore, difficulty will be enhanced with an increasing number of nodes (platforms), and concepts including:
@@ -127,7 +126,7 @@ A ninja in training receives a mysterious letter from a captured village, from h
 - Platforms.
 - Snake Spirit guide and text boxes.
 - Announcements. (You win, You lose, Stage Complete, etc.)
-- Buttons (Main screen, settings, quit, etc.)
+- Buttons (Main screen, settings, quit, restart, etc.)
 
 ## Core Gameplay Mechanics (Detailed)
 
