@@ -50,8 +50,8 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- Prior to the game, the player will need to have a basic understanding of C++.
+- Prior to the game, the player will need to have a basic understanding of Linked Lists.
 
 ## Assessment Measures
 
