@@ -2,20 +2,20 @@
 
 ## Elevator Pitch
 
-A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his deathbed, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing nodes as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
+A ninja in training receives a mysterious letter from a captured village, from his long-lost brother in his deathbed, who wishes to see his shinobi brother once more. However, the path to him is not easy - the land is overrun by enemies that are only reachable through connecting, deleting, and traversing platforms as you would with a linked list. Time is running out - if no one can fight for the last shinobi, he will do it himself.
 
 
 ## Influences (Brief)
 
 - [*Shadow Fighter*](https://www.youtube.com/watch?v=CTHdMReN_9I&list=PLGtZwVE-T07sgNHY4O-rWxXGvv_iazHaA):
   - *Video game with Player vs PC action fighting (Mobile)*
-  - The combat animations, environment design, and character profile designs.
+  - The combat animations, environment design, and shadow-silhouette character designs.
 - [*Ronin: Turn-Based Action Platformer*](https://www.youtube.com/watch?v=zLmbeogBfqU):
   - *Video game with Player vs PC turn-based fighting*
   - Turn-based combat and action, level design with platforms, and overall "feel" of the game.
 - *Naruto*:
   - *TV Series (Anime) based on a young, rising ninja facing troubles.*
-  - Character design, special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.
+  - Character design (cut-scenes), special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.
 
 ## Core Gameplay Mechanics (Brief)
 
@@ -34,8 +34,7 @@ C++ and Linked Lists
 
 ## Target Audiences
 
-* Intermediate programmers with understanding of C++.
-* Intermediate
+* Intermediate-level programmers with understanding of C++, who are starting to learn data structures and linked lists.
 
 ## Target Contexts
 
@@ -47,27 +46,31 @@ C++ and Linked Lists
 - By the end of the lesson, players will be able to perform necessary actions to remove, add, and travel through doubly linked lists, circular linked lists, and convert linked lists into doubly linked/circular linked lists.
 - By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.
 
+After completing the game, the player will demonstrate:
+- The ability to traverse, delete nodes, and insert nodes in linked lists.
+- The ability to visualize the loss of reference nodes or creation of a broken list when traversing linked lists.
+- The ability to create complex structures stemming from linked lists (such as circular linked lists) and further operations using such complex structures.
+
+
 ## Prerequisite Knowledge
 
-- Prior to the game, the player needs the ability to code in C++.
-- Prior to the game, the player needs to demonstrate ability to traverse nodes in a linked list.
+- Prior to the game, the player needs the ability to code in C++ and demonstrate basic coding capabilities, including datatypes, varibles, loops, and other basic coding knowledge.
+- Prior to the game, the player needs to demonstrate knowledge of the structure of a node, including the .next and .prev fields.
 
 ## Assessment Measures
-
-After completing the game, the player will demonstrate:
-- The ability to show proficiency in traversing linked lists.
-- The ability to visualize the loss of reference nodes or creation of a broken list when traversing linked lists.
-- The ability to complete hit combos and long-range shots against in-game opponents.
+A short pre-test and matching post-test should be designed to assess student learning.
+- Given data, create nodes including the data and arranging them in the provided order using .next fields.
+- Given the nodes and a sequence of .next and .prev, traverse the list and find the data that it points to.
+- Choose one data point and delete it from the linked list. Choose a new point and insert it into the linked list.
+- Create a doubly linked list and and a cicular linked list.
 
 
 # What sets this project apart?
 
-*Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
-
-- This project explains the traversal of a linked list to a player.
-- This project also allows the player to understand the loss of reference points or result in a broken list if incorrect platforms are connected to previous ones.
-- This game also allows the player to use hit attacks and long range attacks againt oppenents and bosses.
-- This game allows the player to have to complete the ordering of nodes or platforms in a prompt manner.
+- This project explains the traversal of a linked list to a player - a concept that is hard to visualize with static imagery and words alone.
+- This project also allows the player to understand the loss of reference points or result in a broken list if incorrect platforms are connected to previous ones, which is much harder to do in code alone.
+- This game also allows the player to use hit attacks and long range attacks against oppenents and bosses for a fun twist on linked lists, keeping players engaged.
+- This game allows the player to have to complete the ordering of nodes or platforms in a prompt manner in boss fights, testing the grasp of knowledge and reaction time.
 
 # Player Interaction Patterns and Modes
 
@@ -83,14 +86,14 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 # Gameplay Objectives
 
 - *Connect the platforms*:
-    - Use your mouse to connect the "previous" and "next" field of each platform you stand on.
-    - *Learn how to insert and delete nodes in a linked list.*
+    - Use your mouse to connect the "previous" and "next" field of each platform you stand on based on their symbol.
+    - *Learn how to insert and delete nodes in a linked list and how .next and .prev work based on an address.*
 - *Click "Next" and "Previous" to move through the level*:
     - Click the buttons to go to different platforms to go to the end of the level from the start.
     - *Learn how to traverse through a linked list.*
 - *Defeat enemies*:
     - Click the attack button to fight enemies.
-    - *Provide a sense of achievement on wins, but allow to correct mistakes when hurt*
+    - *Provide a sense of achievement on wins, but punish mistakes when hurt*
 - *Advance through levels*:
     - Successfully make it to the end of the level.
     - *Complete varying difficulty levels of the concept at hand.*
@@ -102,16 +105,17 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 - The player can click the "Next" button to move to the platform that is linked to the current platform's "next" field.
 - The player can click the "Previous" button to move to the platform that is linked to the current platform's "previous" field.
 - The player can click "Attack" to use their turn to fight an enemy. Combat is a Quick Time Event that will do damage to the opponent based on how well it was executed.
+- The player can change the Next or Previous field of the platform by clicking on it and matching the correct symbol.
 
 # Rules
 
 - The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself.
-- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character on the next platform to connect the two. There will be multiple platforms, so connecting them will advance in difficulty.
+- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character (that of the .prev on the next platform) to connect the two. There will be multiple platforms, so connecting them will advance in difficulty.
 - The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
-- Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around more, but make even more mistakes.
-- The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision.
+Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around more, but make even more mistakes.
+- The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision. Some platforms will also be above or below them.
 - If a platform is not assigned a .prev or a .next by accident, it will disappear. The player will have to find another route or restart the level.
-- The player only gets the assistance of a "snake spirit" on the first stage, which is an introduction to the game. After that, they only get hints to a better performance on the death screen.
+- The player only gets the assistance of a "snake spirit" until the second stage as an introduction to the game. After that, they only get hints to a better performance on the death screen.
 - The player will be given a QTE (Quick Time Event) to attack an opponent. Its difficulty will vary based on how "clean" their platform connection is. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform.
 - Players will learn through these steps to traverse a linked list. Furthermore, difficulty will be enhanced with an increasing number of nodes (platforms), and concepts including:
   - node deletion (removing a harmful platform)
@@ -129,6 +133,7 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 - On-screen buttons for next, previous, and attack.
 - On-screen timer for QTE and Boss Fights.
 - Platforms.
+- Menu box to edit platforms.
 - Snake Spirit guide and text boxes.
 - Announcements. (You win, You lose, Stage Complete, etc.)
 - Buttons (Main screen, settings, quit, restart, etc.)
@@ -172,12 +177,11 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 
 - As a practitioner of Hebijutsu, The Last Shinobi is connected to his environment, specifically the nature of snakes. A snake spirit will provide helpful dialogue to assist the shinobi in his trials, especially in the beginning, that will disappear with time. This spirit is later revealed to be the Shinobi's brother's fighting spirit.
 - When injured enough times to die, the player will be faced with a black death screen and the white silhouette of the last shinobi in his death animation. Depending on how the player failed (lost connection to a platform, died to a platform that should have been deleted, etc.), they will receive a helpful note surrounding the topic of the stage.
-[PICTURE HERE]
 
 ## Presentation of Content
 
 - Players will receive a short tutorial from a snake spirit (see **Presentation of Rules**).
-- Since the concept at hand is linked lists, each node is a platform, whose data can be plain, with an enemy, with spikes, or with power-ups. This will be a visual detail that the player is expected to grasp. Each platform will have a small Japanese character representing an address, which will be used to complicate the game later on. This will teach players on how linked lists are formatted.
+- Since the concept at hand is linked lists, each node is a platform, whose data can be plain, with an enemy, with spikes, or with power-ups. This will be a visual detail that the player is expected to grasp. Each platform will have a small Japanese character representing an "address" to the next or previous platform. This will teach players on how linked lists are formatted.
 - The player will have buttons on-screen to move to the next platform ('.next'), to go back to a platform ('.prev'), and to commence an attack. If the player goes to the platform in the right sequence, they will be able to do a critical surprise attack, killing the enemy in few hits. However, if done incorrectly (for example, if they delete a platform they are standing on and end up falling onto the platform below them that contains an enemy), they will be punished by being attacked and recieving damage. Enough damage will kill the player and force them to start from the beginning of the level. This teaches core elements of linked lists, such as traversal, deletion, and insertion.
 - Boss levels will have the same features, but the player is timed. The level will be set in a specific way that pose some concepts as puzzles (for example, the player will be expected to created a doubly linked list to travel backwards to dodge an incoming attack). Note that the player is not allowed to stay on the same platform at any point in the game.
 
@@ -187,7 +191,9 @@ The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once give
 
 ## Storyboarding
 
-[PICTURES HERE]
+![Main Title Screen](images\IMG_1057.jpeg)
+![Stage 1 Level Example](images\IMG_1058.jpeg)
+
 
 # Assets Needed
 
