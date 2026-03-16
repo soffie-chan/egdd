@@ -64,11 +64,10 @@ After completing the game, the player will demonstrate:
 
 *Give some reasons why this game is not like every other game out there. Whether the learning objective is unique, the gameplay mechanics are new, or what. You should persuade the reader that your game is novel and worthy of development. Consider arguments that would be persuasive to a Venture Capitalist, Teacher, or Researcher. These might be focused on learning needs, too.*
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
-- *Reason #4*
-- *etc.*
+- This project explains the traversal of a linked list to a player.
+- This project also allows the player to understand the loss of reference points or result in a broken list if incorrect platforms are connected to previous ones.
+- This game also allows the player to use hit attacks and long range attacks againt oppenents and bosses.
+- This game allows the player to have to complete the ordering of nodes or platforms in a prompt manner.
 
 # Player Interaction Patterns and Modes
 
