@@ -191,9 +191,14 @@ The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once give
 
 ## Storyboarding
 
-![Main Title Screen](.\images\IMG_1057.jpeg)
-
-![Stage 1 Level Example](.\images\IMG_1058.jpeg)
+![Main Title Screen](/images/IMG_1057.jpeg)
+![Stage 1 Level Example](/images/IMG_1058.jpeg)
+![Good node connection example](/images/IMG_1060.jpeg)
+![Menu to edit platform example](/images/IMG_1062.jpeg)
+![bad node 2 example](/images/IMG_1061.jpg)
+![Death screen](/images/IMG_1063.jpeg)
+![Good node 2 example](/images/IMG_1064.jpeg)
+![kill + snake spirit example](/images/IMG_1065.jpeg)
 
 
 # Assets Needed
