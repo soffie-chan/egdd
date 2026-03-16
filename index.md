@@ -190,9 +190,9 @@ Eventually, the previously mentioned "middle section" will get much larger, allo
 The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once given up to his training as a young boy, lost contact with his family, including the brother he once looked up to - a trained swordsman who returned from war with a strange illness. With all his hopes gone up in the flames along with his village, the shinobi recieves a secret letter from his brother, who now hides in a nearby village captured by their clan's greatest enemies. The news is devastating - his brother lies on his deathbed, with the last hope of seeing his brother once more before he rests. Determined, the shinobi prepares his sharpest sword for the greatest battle of his life - not just him against the strongest clan in ancient East Japon, but the force that kept him from his soulmate for far too long.
 
 ## Storyboarding
-<br>
+
 ![Main Title Screen](.\images\IMG_1057.jpeg)
-<br>
+
 ![Stage 1 Level Example](.\images\IMG_1058.jpeg)
 
 
