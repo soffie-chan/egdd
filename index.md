@@ -30,15 +30,16 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+C++ and Linked Lists
 
 ## Target Audiences
 
-*Who are your learners?*
+* Intermediate programmers with understanding of C++.
+* Intermediate
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+* This would be assigned as a supplementary learning material for a student enrolled in C++ or Data Structures courses.
 
 ## Learning Objectives
 
@@ -48,15 +49,15 @@ A ninja in training receives a mysterious letter from a captured village, from h
 
 ## Prerequisite Knowledge
 
-*What do they need to know prior to trying this game?*
-
-- Prior to the game, the player will need to have a basic understanding of C++.
-- Prior to the game, the player will need to have a basic understanding of Linked Lists.
+- Prior to the game, the player needs the ability to code in C++.
+- Prior to the game, the player needs to demonstrate ability to traverse nodes in a linked list.
 
 ## Assessment Measures
 
-*Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
-
+After completing the game, the player will demonstrate:
+- The ability to show proficiency in traversing linked lists.
+- The ability to visualize the loss of reference nodes or creation of a broken list when traversing linked lists.
+- The ability to complete hit combos and long-range shots against in-game opponents.
 
 
 # What sets this project apart?
