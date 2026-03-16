@@ -72,26 +72,31 @@ A ninja in training receives a mysterious letter from a captured village, from h
 # Player Interaction Patterns and Modes
 
 ## Player Interaction Pattern
-
-*Describe how people play your game, how many players are involved at once, how they interact with the system works, etc.*
+The Last Shinobi is a single-player game. Only one player is involved at once. They will primarily use the mouse of a computer to make connections between platforms, progress the player, and click through options and cutscenes.
 
 ## Player Modes
 
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
-
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+- *Player Menu*: Consisting of a Quit, Play, and Options button, the player can click the buttons to close the game, play the game, and change the settings within the game respectively.
+- *Cutscenes*: There is no active gameplay or learning in these scenes - they are mostly pictures with a caption of dialogue under them to progress the story.
+- *Gameplay*: Single-player gameplay where you advance through the level based on performance according to the rules. There are seven total stages with 3-4 levels in them each until the end.
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *Primary Objective #2*:
-    - Description: *Description*
-    - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
+- *Connect the platforms*:
+    - Use your mouse to connect the "previous" and "next" field of each platform you stand on.
+    - *Learn how to insert and delete nodes in a linked list.*
+- *Click "Next" and "Previous" to move through the level*:
+    - Click the buttons to go to different platforms to go to the end of the level from the start.
+    - *Learn how to traverse through a linked list.*
+- *Defeat enemies*:
+    - Click the attack button to fight enemies.
+    - *Provide a sense of achievement on wins, but allow to correct mistakes when hurt*
+- *Advance through levels*:
+    - Successfully make it to the end of the level.
+    - *Complete varying difficulty levels of the concept at hand.*
+- *Advance through stages*:
+    - Successfully complete 3-4 levels and defeat a timed boss battle related to the same topic.
+    - *Complete learning a concept related to linked lists.*
 
 # Procedures/Actions
 - The player can click the "Next" button to move to the platform that is linked to the current platform's "next" field.
