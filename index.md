@@ -191,13 +191,28 @@ The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once give
 
 ## Storyboarding
 
+Main Title Screen with buttons
 ![Main Title Screen](/images/IMG_1057.jpeg)
+
+Stage 1 Level 1 Example Layout
 ![Stage 1 Level Example](/images/IMG_1058.jpeg)
+
+Example of a good node connection - clicking next results in a successful jump
 ![Good node connection example](/images/IMG_1060.jpeg)
+
+Clicking the symbol allows you to edit the .next and .prev symbols. Since it's different, we want it to be the red-circled symbol so we go to the right platform (on the right).
 ![Menu to edit platform example](/images/IMG_1062.jpeg)
+
+Example of a bad node connection - clicking next makes the shinobi fall into the abyss, taking damage, because that node isn't linked to our current platform.
 ![bad node 2 example](/images/IMG_1061.jpg)
+
+Death screen example
 ![Death screen](/images/IMG_1063.jpeg)
+
+Example of a good node connection to a platform with an unsuspecting enemy.
 ![Good node 2 example](/images/IMG_1064.jpeg)
+
+Example of a "kill" and a comment from our Snake Spirit friend (only before stage 2)
 ![kill + snake spirit example](/images/IMG_1065.jpeg)
 
 
