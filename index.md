@@ -20,11 +20,12 @@ A ninja in training receives a mysterious letter from a captured village, from h
 ## Core Gameplay Mechanics (Brief)
 
 - Jump to platforms by solving platform-connection problems (related to linked lists)
-- Stealthily execute unaware opponents with action combos
+- Stealthily execute unaware opponents by properly connecting platforms that lead to them.
 - Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death (replaying the level)
 - Correctly connect platforms to ensure that the shinobi can jump to them AND reach his end goal.
 - Traverse the platforms using buttons and delete dangerous spiky platforms to advance.
 - Fight boss battles to test your knowledge against the clock
+- View how your moves correspond to real code in an on-screen box.
 
 # Learning Aspects
 
@@ -45,12 +46,10 @@ C++ and Linked Lists
 - By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for insertion, deletion, and traversal.
 - By the end of the lesson, players will be able to perform necessary actions to remove, add, and travel through doubly linked lists, circular linked lists, and convert linked lists into doubly linked/circular linked lists.
 - By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.
-
 After completing the game, the player will demonstrate:
 - The ability to traverse, delete nodes, and insert nodes in linked lists.
 - The ability to visualize the loss of reference nodes or creation of a broken list when traversing linked lists.
 - The ability to create complex structures stemming from linked lists (such as circular linked lists) and further operations using such complex structures.
-
 
 ## Prerequisite Knowledge
 
@@ -64,12 +63,22 @@ A short pre-test and matching post-test should be designed to assess student lea
 - Choose one data point and delete it from the linked list. Choose a new point and insert it into the linked list.
 - Create a doubly linked list and and a cicular linked list.
 
+Given a linked list containing the following - H- [12, 7, 25, 3, 18, 5] -T
+- Give each of the nodes in this list a "prev" field. Make it doubly linked.
+- Assuming the list is now doubly linked, travel through the list and print each node. Also find the length of the list.
+- Insert the node 14 between 25 and 3. (14.next = 25, 25.next = 3)
+- Delete the node with the data of 18. (node = 18, 3.next = 5, 5.prev = 3, node.delete())
+- Delete the node 5. Insert a node 2 at the start of the list.
+- Convert the linked list into a circular linked list.
+- If I used the loop (while node.next!==NULL) to travel through the list, which node will not be travelled to? (the last index)
+- If I want to insert a new node 13 after 25, are the following steps enough? - 25.next = 13. (No, 13.next should also be 3. Otherwise, you lose the "prev" reference of 3)
+
 
 # What sets this project apart?
 
 - This project explains the traversal of a linked list to a player - a concept that is hard to visualize with static imagery and words alone.
 - This project also allows the player to understand the loss of reference points or result in a broken list if incorrect platforms are connected to previous ones, which is much harder to do in code alone.
-- This game also allows the player to use hit attacks and long range attacks against oppenents and bosses for a fun twist on linked lists, keeping players engaged.
+- This game also allows the player to use attacks that test how the players set up their nodes, ensuring that everything is connected to prevent punishment.
 - This game allows the player to have to complete the ordering of nodes or platforms in a prompt manner in boss fights, testing the grasp of knowledge and reaction time.
 
 # Player Interaction Patterns and Modes
@@ -92,7 +101,7 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
     - Click the buttons to go to different platforms to go to the end of the level from the start.
     - *Learn how to traverse through a linked list.*
 - *Defeat enemies*:
-    - Click the attack button to fight enemies.
+    - Click the attack button to fight enemies as long as your platforms are connected correctly.
     - *Provide a sense of achievement on wins, but punish mistakes when hurt*
 - *Advance through levels*:
     - Successfully make it to the end of the level.
@@ -104,7 +113,7 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 # Procedures/Actions
 - The player can click the "Next" button to move to the platform that is linked to the current platform's "next" field.
 - The player can click the "Previous" button to move to the platform that is linked to the current platform's "previous" field.
-- The player can click "Attack" to use their turn to fight an enemy. Combat is a Quick Time Event that will do damage to the opponent based on how well it was executed.
+- The player can click "Attack" to use their turn to fight an enemy. Combat will do damage to the opponent based on whether all the nodes appropriately lead to the opponent.
 - The player can change the Next or Previous field of the platform by clicking on it and matching the correct symbol.
 
 # Rules
@@ -112,11 +121,12 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 - The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself.
 - Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character (that of the .prev on the next platform) to connect the two. There will be multiple platforms, so connecting them will advance in difficulty.
 - The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
-Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around more, but make even more mistakes.
+Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around and scroll through the level area, but make even more mistakes.
+- Each move you make is recorded as actual code in a small box for the player's reference. The player, past stage 4, will be forced to type in these boxes to make moves.
 - The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision. Some platforms will also be above or below them.
 - If a platform is not assigned a .prev or a .next by accident, it will disappear. The player will have to find another route or restart the level.
 - The player only gets the assistance of a "snake spirit" until the second stage as an introduction to the game. After that, they only get hints to a better performance on the death screen.
-- The player will be given a QTE (Quick Time Event) to attack an opponent. Its difficulty will vary based on how "clean" their platform connection is. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform.
+- The player will be given an Attack button to attack an opponent. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform. Pressing Attack will execute a jumping sequence to the opponent, which will only go well if all the nodes are corrected.
 - Players will learn through these steps to traverse a linked list. Furthermore, difficulty will be enhanced with an increasing number of nodes (platforms), and concepts including:
   - node deletion (removing a harmful platform)
   - doubly linked lists (in the first stage, the player can only move in one direction), 
@@ -141,9 +151,10 @@ Eventually, the previously mentioned "middle section" will get much larger, allo
 ## Core Gameplay Mechanics (Detailed)
 
 - Jump to platforms by solving platform-connection problems (related to linked lists). Traverse a linked list path and be able to choose which platform is next based on which nodes (platforms) are connected to the current node.
-- Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms. Be able to perform action combos to take out these opponents. Advancing to more difficult enemies leads you to a boss fight, which is similar in combat, but timed - you lose your turn if the timer runs out on your move. Use your knowledge of linked lists and their connections (links) to link platforms to avoid attacks. Answer questions in a limited amount of time, and finish the boss level to advance to the next topic.
+- Stealthily execute unaware opponents with action combos. Sneak up on opponents at different parts of the platforms if you perform the right node operations. Advancing to more difficult enemies leads you to a boss fight, which is similar in combat, but timed - you lose your turn if the timer runs out on your move. Use your knowledge of linked lists and their connections (links) to link platforms to avoid attacks. Answer questions in a limited amount of time, and finish the boss level to advance to the next topic.
 - Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death. As you connect platforms, choosing two in an incorrect order/sequence could cause damage to the health of your player. Additionally, failing to sneak up on opponents can lead to similar injury and loss of health. If player sustains enough damage, it will result in death, causing the player to have to restart the level.
 - Traverse the platforms using buttons and delete dangerous spiky platforms to advance. Cross platforms via Previous and Next nodes respectively. Delete dangerous, spiky platforms (ones that would not connect via links) in order to advance past them to more suitable and correctly sequential platforms.
+- Players can view and type in a small box on the screen to understand the actual code behind their operations.
 
     
 ## Feedback
