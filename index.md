@@ -44,12 +44,11 @@ C++ and Linked Lists
 ## Learning Objectives
 
 - By the end of the lesson, players will be able to, when given a linked list, sequence pointer assignments for insertion, deletion, and traversal.
-- By the end of the lesson, players will be able to perform necessary actions to remove, add, and travel through doubly linked lists, circular linked lists, and convert linked lists into doubly linked/circular linked lists.
+- By the end of the lesson, players will be able to perform necessary actions to remove, add, and travel through doubly linked lists.
 - By the end of the lesson, players will be able to, when given a linked list, identify how incorrect assignments cause loss of references or broken lists.
 After completing the game, the player will demonstrate:
 - The ability to traverse, delete nodes, and insert nodes in linked lists.
 - The ability to visualize the loss of reference nodes or creation of a broken list when traversing linked lists.
-- The ability to create complex structures stemming from linked lists (such as circular linked lists) and further operations using such complex structures.
 
 ## Prerequisite Knowledge
 
@@ -57,21 +56,58 @@ After completing the game, the player will demonstrate:
 - Prior to the game, the player needs to demonstrate knowledge of the structure of a node, including the .next and .prev fields.
 
 ## Assessment Measures
-A short pre-test and matching post-test should be designed to assess student learning.
+A short pre-test and matching post-test (where the data numbers are randomized each time) should be designed to assess student learning.
 - Given data, create nodes including the data and arranging them in the provided order using .next fields.
 - Given the nodes and a sequence of .next and .prev, traverse the list and find the data that it points to.
 - Choose one data point and delete it from the linked list. Choose a new point and insert it into the linked list.
-- Create a doubly linked list and and a cicular linked list.
 
-Given a linked list containing the following - H- [12, 7, 25, 3, 18, 5] -T
-- Give each of the nodes in this list a "prev" field. Make it doubly linked.
-- Assuming the list is now doubly linked, travel through the list and print each node. Also find the length of the list.
-- Insert the node 14 between 25 and 3. (14.next = 25, 25.next = 3)
-- Delete the node with the data of 18. (node = 18, 3.next = 5, 5.prev = 3, node.delete())
-- Delete the node 5. Insert a node 2 at the start of the list.
-- Convert the linked list into a circular linked list.
-- If I used the loop (while node.next!==NULL) to travel through the list, which node will not be travelled to? (the last index)
-- If I want to insert a new node 13 after 25, are the following steps enough? - 25.next = 13. (No, 13.next should also be 3. Otherwise, you lose the "prev" reference of 3)
+The following is an example of the assessment -
+A Node class is defined as the following -
+class Node {
+  data: int;
+  next : NULL;
+  prev: NULL
+}
+The following list - H-[12, 7, 25, 3, 18, 5] -T - contains nodes. Each number shown is their data, stored in a pointer called "node<data>". For example, 12 is the data of node12, where node12 is a pointer.
+
+- Given the nodes with data of 7, 5, 3, 18, 25, 12 , Fill in each node's .prev and .next field to arrange them in the order presented in the list above.
+`
+node12->next = node7;
+node7->next = node25;
+node25->next = node3;
+node3->next = node18;
+node18->next = node5;
+
+node7->prev = node12;
+node25->prev = node7;
+node3->prev = node25;
+node18->prev = node3;
+node5->prev = node18;
+`
+
+
+- From the now ordered linked list, insert the node with data of 14 between the nodes with data 25 and 3. Assume the data of 14 is stored in a node 'node' with .prev = NULL and .next = NULL.
+`
+node14->next = node3;
+node14->prev = node25;
+node25->next = node14;
+node3->prev = node14;
+`
+
+- Delete the node with data of 5.
+`
+node18->next = NULL;
+delete(node5);
+`
+
+- Traverse the list and print each node in the order provided in (1).
+`
+Node* temp=node12;
+while (temp!=NULL){
+  cout<< temp->data<<" ";
+  temp = temp->next;
+}
+`
 
 
 # What sets this project apart?
@@ -118,8 +154,8 @@ The Last Shinobi is a single-player game. Only one player is involved at once. T
 
 # Rules
 
-- The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself.
-- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character (that of the .prev on the next platform) to connect the two. There will be multiple platforms, so connecting them will advance in difficulty.
+- The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself. The platforms will be numbered.
+- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character (that of the .prev on the next platform) to connect the two. There will be multiple platforms, so connecting them will advance in difficulty. Each platform will have a number, indicating the data within the list.
 - The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
 Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around and scroll through the level area, but make even more mistakes.
 - Each move you make is recorded as actual code in a small box for the player's reference. The player, past stage 4, will be forced to type in these boxes to make moves.
