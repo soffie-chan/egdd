@@ -77,7 +77,8 @@ node7->next = node25;
 node25->next = node3;
 node3->next = node18;
 node18->next = node5;
-
+`
+`
 node7->prev = node12;
 node25->prev = node7;
 node3->prev = node25;
