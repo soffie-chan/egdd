@@ -7,24 +7,18 @@ An outcast blue baby chick goes on an adventure to find his mother hen, Mama. Us
 
 ## Influences (Brief)
 
-- [*Shadow Fighter*](https://www.youtube.com/watch?v=CTHdMReN_9I&list=PLGtZwVE-T07sgNHY4O-rWxXGvv_iazHaA):
-  - *Video game with Player vs PC action fighting (Mobile)*
-  - The combat animations, environment design, and shadow-silhouette character designs.
-- [*Ronin: Turn-Based Action Platformer*](https://www.youtube.com/watch?v=zLmbeogBfqU):
-  - *Video game with Player vs PC turn-based fighting*
-  - Turn-based combat and action, level design with platforms, and overall "feel" of the game.
-- *Naruto*:
-  - *TV Series (Anime) based on a young, rising ninja facing troubles.*
-  - Character design (cut-scenes), special effects, main art style, and the concept of "fighting styles" (jutsus) used as power-ups.
+- *Duck Life*:
+  - *Game series about raising a duck to be a champion in a sport.*
+  - Sprite animations
 
 ## Core Gameplay Mechanics (Brief)
 
 - Jump to platforms by solving platform-connection problems (related to linked lists)
-- Stealthily execute unaware opponents by properly connecting platforms that lead to them.
-- Incorrect platform connections and not-so-stealthy encounters lead to injury, enough of which can lead to death (replaying the level)
-- Correctly connect platforms to ensure that the shinobi can jump to them AND reach his end goal.
+- Delete platforms with threats to eliminate them.
+- Incorrect platform connections  lead to injury, enough of which can lead to death (replaying the level)
+- Correctly connect platforms to ensure that the chick can jump to them AND reach his end goal.
 - Traverse the platforms using buttons and delete dangerous spiky platforms to advance.
-- Fight boss battles to test your knowledge against the clock
+- Fight boss battles to test your knowledge
 - View how your moves correspond to real code in an on-screen box.
 
 # Learning Aspects
@@ -121,67 +115,52 @@ while (temp!=NULL){
 # Player Interaction Patterns and Modes
 
 ## Player Interaction Pattern
-The Last Shinobi is a single-player game. Only one player is involved at once. They will primarily use the mouse of a computer to make connections between platforms, progress the player, and click through options and cutscenes.
+Linkin' Chickin is a single-player game. Only one player is involved at once. They will primarily use the mouse of a computer to make connections between platforms, progress the player, and click through options and cutscenes.
 
 ## Player Modes
 
 - *Player Menu*: Consisting of a Quit, Play, and Options button, the player can click the buttons to close the game, play the game, and change the settings within the game respectively.
 - *Cutscenes*: There is no active gameplay or learning in these scenes - they are mostly pictures with a caption of dialogue under them to progress the story.
-- *Gameplay*: Single-player gameplay where you advance through the level based on performance according to the rules. There are seven total stages with 3-4 levels in them each until the end.
+- *Gameplay*: Single-player gameplay where you advance through the level based on performance according to the rules. There are three total stages with 3-4 levels in them each until the end.
 
 # Gameplay Objectives
 
 - *Connect the platforms*:
-    - Use your mouse to connect the "previous" and "next" field of each platform you stand on based on their symbol.
+    - Use proper code to connect the "previous" and "next" field of each platform on the screen.
     - *Learn how to insert and delete nodes in a linked list and how .next and .prev work based on an address.*
-- *Click "Next" and "Previous" to move through the level*:
-    - Click the buttons to go to different platforms to go to the end of the level from the start.
+- *Jump to different platforms to progress after connecting them*:
+    - Use proper node connection to go to different platforms to go to the end of the level from the start.
     - *Learn how to traverse through a linked list.*
 - *Defeat enemies*:
-    - Click the attack button to fight enemies as long as your platforms are connected correctly.
+    - Delete the nodes that enemies are standing on and find your way through mazes of platforms.
     - *Provide a sense of achievement on wins, but punish mistakes when hurt*
 - *Advance through levels*:
     - Successfully make it to the end of the level.
     - *Complete varying difficulty levels of the concept at hand.*
 - *Advance through stages*:
-    - Successfully complete 3-4 levels and defeat a timed boss battle related to the same topic.
+    - Successfully complete 3-4 levels and defeat a boss battle related to the same topic.
     - *Complete learning a concept related to linked lists.*
 
 # Procedures/Actions
-- The player can click the "Next" button to move to the platform that is linked to the current platform's "next" field.
-- The player can click the "Previous" button to move to the platform that is linked to the current platform's "previous" field.
-- The player can click "Attack" to use their turn to fight an enemy. Combat will do damage to the opponent based on whether all the nodes appropriately lead to the opponent.
-- The player can change the Next or Previous field of the platform by clicking on it and matching the correct symbol.
+- The player can use the arrow keys to move Baby Blue across different platforms, which works only when platforms are connected.
+- The player can type linked-list-related commands into a text box to connect various nodes (platforms)
+- The player can delete or insert new platforms depending on their availability and the stage.
 
 # Rules
 
-- The player has a "Next", "Previous", "Attack" button at the bottom of the screen. They can use these to move the main character himself. The platforms will be numbered.
-- Clicking on a platform will allow the player to "edit" its characteristics. Each platform will have a Japanese character on its left (previous address) and right (next address). The player has to click the proper character (left or right) and then click the correct  character (that of the .prev on the next platform) to connect the two. There will be multiple platforms, so connecting them will advance in difficulty. Each platform will have a number, indicating the data within the list.
-- The player can only interact with the middle section of the screen. The screen has a left section (where the main character is standing), a middle section (whose platforms have editable properties) and the right section (whose platforms cannot be edited, but can be jumped to - this becomes the middle section after the previous platform is solved correctly).
-Eventually, the previously mentioned "middle section" will get much larger, allowing players to move around and scroll through the level area, but make even more mistakes.
-- Each move you make is recorded as actual code in a small box for the player's reference. The player, past stage 4, will be forced to type in these boxes to make moves.
-- The player is not allowed to stay on the same platform at any point in the game, forcing them to move forward or backward depending upon the level design to prevent players from not making a decision. Some platforms will also be above or below them.
-- If a platform is not assigned a .prev or a .next by accident, it will disappear. The player will have to find another route or restart the level.
-- The player only gets the assistance of a "snake spirit" until the second stage as an introduction to the game. After that, they only get hints to a better performance on the death screen.
-- The player will be given an Attack button to attack an opponent. Players are required to kill all enemies before proceding, and cannot do so by deleting their platform. Pressing Attack will execute a jumping sequence to the opponent, which will only go well if all the nodes are corrected.
-- Players will learn through these steps to traverse a linked list. Furthermore, difficulty will be enhanced with an increasing number of nodes (platforms), and concepts including:
-  - node deletion (removing a harmful platform)
-  - doubly linked lists (in the first stage, the player can only move in one direction), 
-  - circular linked lists (in a boss fight)
-  - swap nodes (swap platforms to jump to)
-  - and a few other medium-difficulty concepts.
+- The player has a text box at the bottom of the screen. They use this box to enter commands that connect various platforms across the level. Helpful tips will be given in the first level of each stage.
+- They player uses arrow keys to move the main character around the level and uses them to jump from platform to platform.
+- The player must use .next or prev to connect platforms before jumping, showcasing how linked lists function without proper connections.
+- Players must reach the end objective (listed at the upper left of the screen) to complete the level. It can range from collecting items to simply reaching a platform.
 
 
 # Objects/Entities
 
-- Enemies and their movesets.
-- Main Character and their movesets - including their special move, that can eliminate enemies at a range (does not appear until later), a healthbar.
-- Bosses and their movesets.
-- On-screen buttons for next, previous, and attack.
-- On-screen timer for QTE and Boss Fights.
+- Main Character and their features - including their movement and their healthbar.
+- Bosses.
+- On-screen text box for commands
 - Platforms.
-- Menu box to edit platforms.
-- Snake Spirit guide and text boxes.
+- Trina Saurus tips and tricks during the stage.
 - Announcements. (You win, You lose, Stage Complete, etc.)
 - Buttons (Main screen, settings, quit, restart, etc.)
 
@@ -203,18 +182,17 @@ Eventually, the previously mentioned "middle section" will get much larger, allo
 - On making too many mistakes, the player will die, recieving a black screen that gives them some words of advice based on the reason why they died.
 
 **AUDIO**
-- The main character will make a grunting sound when they get hurt, signaling that the player made a mistake, paired with a decreasing healthbar.
+- The main character will make a chirping sound when they get hurt, signaling that the player made a mistake, paired with a decreasing healthbar.
 - A victorious sound will play on level completion.
-- A single slash sound will play, paired with a black screen and a cry from the main character, signaling their death.
+- The background music for each level features a soft song paired with natural environment noise.
 
 **ANIMATION**
-- On landing on the last platform, the main character will look back at the level, nod, and walk forth to the next level.
+- Baby Blue jumps from one platform to another and can walk around on platforms.
 - There will be one "empty area" that the player can run through - signaling a boss battle is incoming and that they are at the final stretch of the gameplay objective of that stage.
 
 **Long Term Feedback**
 - A level and stage counter will inform the player of their progression through the game.
-- The players deaths (NOT injuries) will be counted to remind them only of continuous mistakes.
-- When you win a stage, you get a cutscene into the next stage. When you win the game, you get a more detailed cutscene where the Last Shinobi meets his brother.
+- When you win a stage, you get a cutscene into the next stage. When you win the game, you get a more detailed cutscene where Baby Blue finds his Mama.
 - If you make an incorrect connection, you will start at the beginning of the level. The player will recieve a blurb that appears on the top of the screen as to how the character got hurt.
 - On completing levels, the player will recieve a congratulatory message.
 
@@ -223,73 +201,45 @@ Eventually, the previously mentioned "middle section" will get much larger, allo
 
 ## Presentation of Rules
 
-- As a practitioner of Hebijutsu, The Last Shinobi is connected to his environment, specifically the nature of snakes. A snake spirit will provide helpful dialogue to assist the shinobi in his trials, especially in the beginning, that will disappear with time. This spirit is later revealed to be the Shinobi's brother's fighting spirit.
-- When injured enough times to die, the player will be faced with a black death screen and the white silhouette of the last shinobi in his death animation. Depending on how the player failed (lost connection to a platform, died to a platform that should have been deleted, etc.), they will receive a helpful note surrounding the topic of the stage.
+- As a chicken, Baby Blue is bound to have a dinosaur ancestral spirit. This spirit guides Blue throughout the game at the first level of each stage.
 
 ## Presentation of Content
 
-- Players will receive a short tutorial from a snake spirit (see **Presentation of Rules**).
-- Since the concept at hand is linked lists, each node is a platform, whose data can be plain, with an enemy, with spikes, or with power-ups. This will be a visual detail that the player is expected to grasp. Each platform will have a small Japanese character representing an "address" to the next or previous platform. This will teach players on how linked lists are formatted.
-- The player will have buttons on-screen to move to the next platform ('.next'), to go back to a platform ('.prev'), and to commence an attack. If the player goes to the platform in the right sequence, they will be able to do a critical surprise attack, killing the enemy in few hits. However, if done incorrectly (for example, if they delete a platform they are standing on and end up falling onto the platform below them that contains an enemy), they will be punished by being attacked and recieving damage. Enough damage will kill the player and force them to start from the beginning of the level. This teaches core elements of linked lists, such as traversal, deletion, and insertion.
-- Boss levels will have the same features, but the player is timed. The level will be set in a specific way that pose some concepts as puzzles (for example, the player will be expected to created a doubly linked list to travel backwards to dodge an incoming attack). Note that the player is not allowed to stay on the same platform at any point in the game.
+- Players will receive a short tutorial from a dinosaur spirit (see **Presentation of Rules**).
+- Since the concept at hand is linked lists, each node is a platform, whose data can be plain, with an enemy, with spikes, or with items. This will be a visual detail that the player is expected to grasp. Each platform will have a small Japanese character representing an "address" to the next or previous platform. This will teach players on how linked lists are formatted.
+- The player will have a text box on the bottom right that allows them to enter different node connections to connect platforms. Furthermore, players will have hints written on walls at times.
+
 
 ## Story (Brief)
 
-The Last Shinobi is one of the last disciples of Hebijutsu. The ninja, once given up to his training as a young boy, lost contact with his family, including the brother he once looked up to - a trained swordsman who returned from war with a strange illness. With all his hopes gone up in the flames along with his village, the shinobi recieves a secret letter from his brother, who now hides in a nearby village captured by their clan's greatest enemies. The news is devastating - his brother lies on his deathbed, with the last hope of seeing his brother once more before he rests. Determined, the shinobi prepares his sharpest sword for the greatest battle of his life - not just him against the strongest clan in ancient East Japon, but the force that kept him from his soulmate for far too long.
+Mama is a great mother hen who has taken care of many babies over years in the barn. She anxiously awaits her new chick's arrival... only to find out that he's blue! Baby Blue is often outcast by his coopmates and therefore closer to Mama, who teaches him strength. One day, Mama is taken away from the farm to be turned into chicken tenders. The coop accepts it as a part of life, but Baby Blue and his trustworthy ancestor's spirit, Trina Saurus, make it their mission to find Mama.
 
 ## Storyboarding
-
-Main Title Screen with buttons
-![Main Title Screen](/images/IMG_1057.jpeg)
-
-Stage 1 Level 1 Example Layout
-![Stage 1 Level Example](/images/IMG_1058.jpeg)
-
-Example of a good node connection - clicking next results in a successful jump
-![Good node connection example](/images/IMG_1060.jpeg)
-
-Clicking the symbol allows you to edit the .next and .prev symbols. Since it's different, we want it to be the red-circled symbol so we go to the right platform (on the right).
-![Menu to edit platform example](/images/IMG_1062.jpeg)
-
-Example of a bad node connection - clicking next makes the shinobi fall into the abyss, taking damage, because that node isn't linked to our current platform.
-![bad node 2 example](/images/IMG_1061.jpg)
-
-Death screen example
-![Death screen](/images/IMG_1063.jpeg)
-
-Example of a good node connection to a platform with an unsuspecting enemy.
-![Good node 2 example](/images/IMG_1064.jpeg)
-
-Example of a "kill" and a comment from our Snake Spirit friend (only before stage 2)
-![kill + snake spirit example](/images/IMG_1065.jpeg)
-
+(Not here yet)
 
 # Assets Needed
 
 ## Aesthetics
 
-The Last Shinobi has an ancient Japanese-themed backstory, so its aesthetic will follow the same. The environment is calm and natural, but tense as you fight the enemies, especially the final boss of each stage. Paired with ambient music, the platforming aspects of the game will be more calm, encouraging players to focus on learning than just playing. 
+Linkin' Chickin is meant to have a very cozy, comfortable art style to give players a calming atmorsphere. The graphics are hand-drawn with paint brushes, making the environment feel like a painting.
 
 
 ## Graphical
 
 - Characters List
-  - *The Last Shinobi (Takeshi, but name does not appear outside of cutscenes)* - Main and only playable character that executes enemies, moves throughout the level, and leads the story. They are a shadow-like figure sporting a kasa (Japanese straw hat) and commonly seen clothing during the time in an attempt to blend in.
-  - *Grunts (Unnamed)* - Main opponents, designed differently in art style based on the stage.
-  - *Bosses* - Each boss is named after a Bushido virtue (way of the samurai). They will be shadow-like figures in traditional samurai headwear and clothing.
-  - *Akio* - The Last Shinobi's brother, only appears in end cutscene. Frail and pale from his sickness, but happy to see his brother.
+  - *Baby Blue* - Main protagonist, controlled by player.
+  - *Trina Saurus Rex* - Guide to assist player during first levels.
+  - *Mama* - The mother hen that Baby Blue attempts to save.
 
 - Textures:
-  - *Characters* - Characters will mostly be detailed but dark silhouettes.
-  - *Cutscenes* - Anime cartoon-like art style/sketchbook-like graphics.
-  - *Environment* - Slightly realistic and blurry as you go further, but strong and detailed the more close the plane is to the character. 
+  - *Characters* - Characters are in a painted, gouache, comic art style
+  - *Cutscenes* - Non-animated scenes of cartoons in gouache
+  - *Environment* - Varies based on stage. Stage 1 is in a barn, stage 2 is in a plains/forest area, and stage 3 is in the city.
   - SEE **STORYBOARDING** FOR VISUAL DETAILS!
 
 - Environment Art/Textures:
-  - Each stage has its own background as you approach your destination - from the outskirts of your training grounds, a forest, village outskirts, village, and the final residence of the main boss.
-  - The platforms are designed based on their stage - for example, a mud-and-grass platform in the forest versus a stone platform in the training grounds.
-  - Some fire effects and particle effects will be added to items like torches and a few fire-based attacks.
-
+  - Each stage has its own background as you approach your destination - from the within a barn, to a vast valley outside of it, to a city.
+  - The platforms are designed based on their stage - for example, hay platforms in the barn stage.
 
 ## Audio
 
